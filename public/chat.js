@@ -8,8 +8,7 @@ socket.on('update_messages', messages => {
 
 function updateMessagesOnScreen(messages) {
   const div_messages = document.querySelector('#messages')
-
-  let list_messages = '<ul>'
+  let list_messages = `<ul>`
   messages.forEach(message => {
     list_messages += `<li> ${message.user}: ${message.msg}</li>`
   })
